@@ -1,0 +1,85 @@
+---
+import TechItem from "./TechItem.astro";
+---
+
+<section id="stack" class="md:scroll-mt-16 flex flex-col gap-9">
+  <div>
+    <h1 class="text-text-light text-3xl font-bold underline decoration-primary">
+      Stack tecnológico
+    </h1>
+    <p class="text-lg">Las tecnologías que uso en mi día a día 🧩</p>
+  </div>
+
+  <div class="flex flex-col gap-16">
+    <div>
+      <h1 class="text-text-light text-xl mb-4">Lenguajes de programación</h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+        <TechItem href="https://www.javascript.com/">JavaScript</TechItem>
+        <TechItem href="https://www.typescriptlang.org/">Typescript</TechItem>
+        <TechItem href="https://nodejs.org/">Node</TechItem>
+        <TechItem href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+          HTML5
+        </TechItem>
+        <TechItem href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+          CSS
+        </TechItem>
+        <TechItem href="https://sass-lang.com/">SCSS</TechItem>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="text-text-light text-xl mb-4">Frameworks y Librerías</h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+        <TechItem href="https://reactjs.org/">React.js</TechItem>
+        <TechItem href="https://nextjs.org/">Next.js</TechItem>
+        <TechItem href="https://astro.build/">Astro</TechItem>
+        <TechItem href="https://tailwindcss.com/">Tailwind CSS</TechItem>
+        <TechItem href="https://material-ui.com/">Material UI</TechItem>
+        <TechItem href="https://ui.shadcn.com/">Shadcn/UI</TechItem>
+        <TechItem href="https://www.prisma.io/">Prisma</TechItem>
+        <TechItem href="https://prettier.io/">Prettier</TechItem>
+        <TechItem href="https://eslint.org/">ESlint</TechItem>
+        <TechItem href="https://vitejs.dev/">Vite</TechItem>
+        <TechItem href="https://styled-components.com/">
+          styled-components
+        </TechItem>
+        <TechItem href="https://expressjs.com/">Express.js</TechItem>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="text-text-light text-xl mb-4">Software y Aplicaciones</h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+        <TechItem href="https://git-scm.com/">Git</TechItem>
+        <TechItem href="https://www.docker.com/">Docker</TechItem>
+        <TechItem href="https://www.postgresql.org/">Postgres</TechItem>
+        <TechItem href="https://www.mysql.com/">MySQL</TechItem>
+        <TechItem href="https://www.mongodb.com/">MongoDB</TechItem>
+        <TechItem href="https://redis.io/">Redis</TechItem>
+        <TechItem href="https://code.visualstudio.com/">VS Code</TechItem>
+        <TechItem href="https://slack.com/">Slack</TechItem>
+        <TechItem href="https://zoom.us/">Zoom</TechItem>
+        <TechItem href="https://www.postman.com/">Postman</TechItem>
+        <TechItem href="https://brave.com/">Brave</TechItem>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="text-text-light text-xl mb-4">Servicios en la nube</h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+        <TechItem href="https://github.com/">Github</TechItem>
+        <TechItem href="https://github.com/features/actions">
+          GH Actions
+        </TechItem>
+        <TechItem href="https://vercel.com/">Vercel</TechItem>
+        <TechItem href="https://render.com/">Render</TechItem>
+        <TechItem href="https://supabase.com/">Supabase</TechItem>
+        <TechItem href="https://www.digitalocean.com/">Digital Ocean</TechItem>
+      </div>
+    </div>
+  </div>
+</section>

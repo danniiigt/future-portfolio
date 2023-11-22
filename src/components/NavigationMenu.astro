@@ -1,0 +1,104 @@
+<nav
+  class="z-40 border border-border bg-background-light/40 sticky top-0 sm:h-[100dvh] border-x-0 border-t-0 sm:border-b-0 sm:border-r backdrop-blur-lg flex flex-col sm:items-center p-4 justify-between"
+>
+  <div class="w-full flex items-center justify-between sm:justify-center">
+    <h1>logo</h1>
+  </div>
+  <div class="flex-auto"></div>
+
+  <nav class="hidden sm:flex flex-col sm:items-center gap-5 sm:gap-3">
+    <a
+      href="#about"
+      aria-label="About"
+      class="sm:w-9 sm:h-9 rounded sm:hover:bg-background-opposite/10 flex items-center sm:justify-center gap-3 sm:text-dimmed sm:hover:text-text-light transition-colors sm:aria-[current=page]:bg-background-opposite sm:aria-[current=page]:text-text-opposite"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="tabler-icon tabler-icon-user"
+        ><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg
+      ><span class="sm:hidden">About</span></a
+    ><a
+      href="#experience"
+      aria-label="Experience"
+      class="sm:w-9 sm:h-9 rounded sm:hover:bg-background-opposite/10 flex items-center sm:justify-center gap-3 sm:text-dimmed sm:hover:text-text-light transition-colors sm:aria-[current=page]:bg-background-opposite sm:aria-[current=page]:text-text-opposite"
+      >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="tabler-icon tabler-icon-briefcase"
+      >
+        <path
+          d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+        >
+        </path>
+        <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"> </path>
+        <path d="M12 12l0 .01"></path><path d="M3 13a20 20 0 0 0 18 0"></path>
+      </svg>
+      <span class="sm:hidden">Experience</span></a
+    ><a
+      href="#stack"
+      aria-label="Stack"
+      class="sm:w-9 sm:h-9 rounded sm:hover:bg-background-opposite/10 flex items-center sm:justify-center gap-3 sm:text-dimmed sm:hover:text-text-light transition-colors sm:aria-[current=page]:bg-background-opposite sm:aria-[current=page]:text-text-opposite"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="tabler-icon tabler-icon-stack-2"
+        ><path d="M12 4l-8 4l8 4l8 -4l-8 -4"></path><path d="M4 12l8 4l8 -4"
+        ></path><path d="M4 16l8 4l8 -4"></path></svg
+      ><span class="sm:hidden">Stack</span></a
+    ><a
+      href="#projects"
+      aria-label="Projects"
+      class="sm:w-9 sm:h-9 rounded sm:hover:bg-background-opposite/10 flex items-center sm:justify-center gap-3 sm:text-dimmed sm:hover:text-text-light transition-colors sm:aria-[current=page]:bg-background-opposite sm:aria-[current=page]:text-text-opposite"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg>
+    </a>
+  </nav>
+
+  <div class="flex-auto"></div>
+</nav>
+
+<script>
+  const scrollToTarget = (e: any) => {
+    e.preventDefault();
+    const targetId = e?.currentTarget?.getAttribute?.("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const margin = 60;
+      const offsetTop = targetElement.offsetTop - margin;
+
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach((link) => {
+    link.addEventListener("click", scrollToTarget);
+  });
+</script>

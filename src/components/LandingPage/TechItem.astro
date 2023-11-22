@@ -1,0 +1,13 @@
+---
+import Check from "../../icons/Check.astro";
+interface Props {
+  href?: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a href={href} target={"_blank"} class="flex items-center gap-2 text-sm">
+  <Check class="w-4 h-4 text-primary" />
+  <slot />
+</a>

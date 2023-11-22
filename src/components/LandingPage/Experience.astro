@@ -1,0 +1,35 @@
+---
+import ExperienceCard from "./ExperienceCard.astro";
+---
+
+<section class="md:scroll-mt-16 flex flex-col gap-9" id="experience">
+  <div>
+    <h1 class="text-text-light text-3xl font-bold underline decoration-primary">
+      Mi experienca en el mundo tech
+    </h1>
+    <p class="text-lg">
+      El paso por los diferentes proyectos y mi papel en cada uno 💻
+    </p>
+  </div>
+
+  <div class="flex flex-col group/list">
+    <ExperienceCard
+      href="https://www.papelaweb.com/"
+      date="JUN 2023 - ACTUALIDAD"
+      title="Desarrollador Fullstack (React.js & Node.js) @ Papel A Web"
+      body="En este puesto, nuevamente desarrollo aplicaciones web de manera autónoma. Mi día a día consiste en analizar las necesidades del cliente/empresa y desarrollar una solución técnica adaptada, abarcando todo el proceso: diseño de la base de datos, desarrollo del backend y desarrollo del frontend. Esta experiencia me ha brindado la oportunidad de enfrentar desafíos constantes y aprender de manera continua."
+    />
+    <ExperienceCard
+      href="https://comanet.es/"
+      date="MAR 2023 - JUN 2023"
+      title="Desarrollador Fullstack (VUE & .NET) @ Comanet"
+      body="En Comanet, desempeñé el rol de desarrollador fullstack. Fue un nuevo desafío, ya que me enfrenté a un stack tecnológico que desconocía, con tecnologías como Vue y .NET. Después de apenas unas semanas, logré dominar ambas tecnologías y comencé a trabajar de manera autónoma en el desarrollo de una webapp destinada a eventos de carreras. Esta aplicación abarcaba diversas funcionalidades, como la gestión de inscripciones, pagos y participantes, entre otras. Mi experiencia en Comanet no solo me permitió adquirir nuevas habilidades, sino también desarrollar la capacidad de adaptarme rápidamente a entornos tecnológicos cambiantes."
+    />
+    <ExperienceCard
+      date="DIC 2022 - MAR 2023"
+      title="Desarrollador Fullstack Freelance"
+      body="Mi primera experiencia tanto laboral como freelance. Estuve desarrollando soluciónes tecnicas para distintos clientes, desde una web para el seguimiento de pedidos, hasta una REST API para una aplicación de inversiónes con integración de distintos métodos de pago. Durante esta etapa pude poner en práctica mis conocimientos de desarrollo web, y aprender a trabajar con clientes, analizando sus necesidades y ofreciendo soluciones adaptadas."
+      isLast
+    />
+  </div>
+</section>

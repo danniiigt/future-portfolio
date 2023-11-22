@@ -1,0 +1,41 @@
+---
+// Supports weights 100-900
+import "@fontsource-variable/outfit";
+import NavigationMenu from "../components/NavigationMenu.astro";
+import Presentation from "../components/Presentation.astro";
+import WhiteBalls from "../components/WhiteBalls.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-[100dvh] bg-background flex flex-col sm:flex-row antialiased text-text">
+        <WhiteBalls />
+        <NavigationMenu />
+
+        <div class="relative z-20 flex-auto flex flex-col lg:flex-row-reverse">
+          <div class="w-full max-w-[800px] relative z-20 px-7 py-9 top-0 mx-auto">
+            <slot />
+          </div>
+          <Presentation />
+        </div>
+  </body>
+</html>
+<style is:global>
+  body {
+    font-family: "Outfit Variable", sans-serif;
+  }
+</style>

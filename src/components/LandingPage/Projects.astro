@@ -1,0 +1,43 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+---
+
+<section id="projects" class="md:scroll-mt-16 flex flex-col gap-9">
+  <div>
+    <h1 class="text-text-light text-3xl font-bold underline decoration-primary">
+      Mis proyectos personales
+    </h1>
+    <p class="text-lg">Algunos de los que he podido acabar... 🙄</p>
+  </div>
+
+  <div class="space-y-12 group/list">
+    <ProjectItem
+      title="Tech Blog"
+      description="Mi blog de tecnología, donde escribo sobre temas que me interesan, como desarrollo web, programación, tecnología, etc. Esta construido con Next.js, TailwindCSS y Shadcn/ui. Para la gestión de contenidos uso la API de Sanity.io que me permite crear un CMS headless y poder escribir mis artículos desde cualquier lugar."
+      image="/projects/tech-blog.jpg"
+      imageAlt="Tech Blog"
+      href="https://tech-blog-five-umber.vercel.app/"
+    />
+    <ProjectItem
+      title="Clon Airbnb"
+      description="Un clon a detalle de la web Airbnb. Construido con Next.js sobre la versión 13 (App dir) con páginas dinámicas y otras estáticas. La autenticación se hace a través de NextAuth.js conectada con una base de datos MongoDB"
+      image="/projects/clon-airbnb.jpg"
+      imageAlt="Clon Airbnb"
+      href="https://airbnb-clone-five-lilac.vercel.app/"
+    />
+    <ProjectItem
+      title="Clon Spotify"
+      description="Un clon del famoso Spotify. Construido sobre Next.js 12 (Pages dir) y TailwindCSS. La autenticación, base de datos y almacenamiento de imagenes/canciónes se hace a través de Supabase"
+      image="/projects/clon-spotify.jpg"
+      imageAlt="Clon Spotify"
+      href="https://spotifree-iota.vercel.app/"
+    />
+    <ProjectItem
+      title="Rentacar"
+      description="Web de alquiler de coches. Una web estática, sin mucha funcionalidad, pero con un diseño muy cuidado. Construida con Next.js y TailwindCSS."
+      image="/projects/rentacar.jpg"
+      imageAlt="Rentacar"
+      href="https://rentacar-nu.vercel.app/"
+    />
+  </div>
+</section>
