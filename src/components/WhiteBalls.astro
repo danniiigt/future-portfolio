@@ -1,19 +1,39 @@
+<script>
+  document.addEventListener("mousemove", (event) => {
+    document.documentElement.style.setProperty(
+      "--mouse-x",
+      event.clientX + "px"
+    );
+
+    document.documentElement.style.setProperty(
+      "--mouse-y",
+      event.clientY + "px"
+    );
+  });
+</script>
+
 <div class="fixed inset-0 z-10 flex pointer-events-none">
   <div
     class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] sm:w-[500px] aspect-square bg-gray-500/10"
   >
-  </div><div
+  </div>
+  <div
     class="absolute bottom-0 translate-y-1/2 left-0 -translate-x-1/2 rounded-full w-[250px] sm:w-[500px] aspect-square bg-gray-500/10"
   >
-  </div><div
+  </div>
+  <div
     class="absolute bottom-0 translate-y-1/2 right-0 translate-x-1/2 rounded-full w-[250px] sm:w-[500px] aspect-square bg-gray-500/10"
   >
-  </div><div
+  </div>
+  <div
     class="hidden lg:block absolute rounded-full w-[100px] aspect-square bg-base-8"
     style="top: -48px; left: 672px;"
   >
-  </div><div
-    class="absolute inset-0 bg-base-1/50 backdrop-blur-[100px] backdrop-saturate-200"
+  </div>
+  <div
+    class="absolute rounded-full w-[45px] sm:w-[40px] aspect-square bg-gray-400 top-[var(--mouse-y)] left-[var(--mouse-x)] -translate-y-1/2 -translate-x-1/2"
   >
+  </div>
+  <div class="absolute inset-0 backdrop-blur-[100px] backdrop-saturate-200">
   </div>
 </div>
