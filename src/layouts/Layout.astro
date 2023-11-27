@@ -22,16 +22,18 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="min-h-[100dvh] bg-background flex flex-col sm:flex-row antialiased text-text">
-        <WhiteBalls />
-        <NavigationMenu />
+  <body
+    class="min-h-[100dvh] bg-background flex flex-col sm:flex-row antialiased text-text"
+  >
+    <WhiteBalls />
+    <NavigationMenu />
 
-        <div class="relative z-20 flex-auto flex flex-col lg:flex-row-reverse">
-          <div class="w-full max-w-[800px] relative z-20 px-7 py-9 top-0 mx-auto">
-            <slot />
-          </div>
-          <Presentation />
-        </div>
+    <div class="relative z-20 flex-auto flex flex-col lg:flex-row-reverse">
+      <div class="w-full max-w-[800px] relative z-20 px-7 py-9 top-0 mx-auto">
+        <slot />
+      </div>
+      <Presentation />
+    </div>
   </body>
 </html>
 <style is:global>

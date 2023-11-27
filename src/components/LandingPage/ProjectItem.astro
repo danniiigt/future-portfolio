@@ -24,11 +24,9 @@ const { title, description, image, imageAlt, href }: Props = Astro.props;
       alt={imageAlt}
       src={image}
       loading="lazy"
-      width="150"
-      height="90"
       decoding="async"
       data-nimg="1"
-      class="group-hover:scale-110 transition-transform will-change-transform aspect-video object-cover object-top"
+      class="group-hover:scale-110 transition-transform will-change-transform aspect-video object-cover object-top w-full sm:w-[175px]"
       style="color:transparent"
     />
   </div>
