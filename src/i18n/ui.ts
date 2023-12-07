@@ -1,6 +1,3 @@
-import enTranslations from "./lang/en.json";
-import esTranslations from "./lang/es.json";
-
 export const languages = {
   es: "Español",
   en: "English",
