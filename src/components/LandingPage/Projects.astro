@@ -1,42 +1,46 @@
 ---
+import { useTranslations } from "../../i18n/utils";
 import ProjectItem from "./ProjectItem.astro";
+const t = useTranslations(Astro);
 ---
 
 <section id="projects" class="md:scroll-mt-16 flex flex-col gap-9">
   <div>
     <h1 class="text-text-light text-3xl font-bold underline decoration-primary">
-      Mis proyectos personales
+      {t("Projects")}
     </h1>
-    <p class="text-lg">Algunos de los que he podido acabar... 🙄</p>
+    <p class="text-lg">
+      {t("ProjectsSubtitle")}
+    </p>
   </div>
 
   <div class="space-y-12 group/list">
     <ProjectItem
-      title="Tech Blog"
-      description="Mi blog de tecnología, donde escribo sobre temas como desarrollo web, programación, tecnología, etc. Está construido con Next.js, TailwindCSS y Shadcn/ui. Para la gestión de contenidos uso la API de Sanity.io, que me permite crear un CMS headless y escribir mis artículos desde cualquier lugar sin tener que tocar nada de código."
+      title={t("ProjectTitle1")}
+      description={t("ProjectBody1")}
       image="/projects/tech-blog.jpg"
-      imageAlt="Tech Blog"
+      imageAlt={t("ProjectTitle1")}
       href="https://tech-blog-five-umber.vercel.app/"
     />
     <ProjectItem
-      title="Clon Airbnb"
-      description="Un clon detallado de la web Airbnb. Construido con Next.js sobre la versión 13 (App dir) con páginas dinámicas y otras estáticas. La autenticación se realiza a través de NextAuth.js conectada a una base de datos MongoDB."
+      title={t("ProjectTitle2")}
+      description={t("ProjectBody2")}
       image="/projects/clon-airbnb.jpg"
-      imageAlt="Clon Airbnb"
+      imageAlt={t("ProjectTitle2")}
       href="https://airbnb-clone-five-lilac.vercel.app/"
     />
     <ProjectItem
-      title="Clon Spotify"
-      description="Un clon del famoso Spotify. Construido sobre Next.js 12 (Pages dir) y TailwindCSS. La autenticación, la base de datos y el almacenamiento de imágenes/canciones se realizan a través de Supabase."
+      title={t("ProjectTitle3")}
+      description={t("ProjectBody3")}
       image="/projects/clon-spotify.jpg"
-      imageAlt="Clon Spotify"
+      imageAlt={t("ProjectTitle3")}
       href="https://spotifree-iota.vercel.app/"
     />
     <ProjectItem
-      title="Rentacar"
-      description="Web de alquiler de coches. Una web estática, sin mucha funcionalidad, pero con un diseño muy cuidado. Construida con Next.js y TailwindCSS."
+      title={t("ProjectTitle4")}
+      description={t("ProjectBody4")}
       image="/projects/rentacar.jpg"
-      imageAlt="Rentacar"
+      imageAlt={t("ProjectTitle4")}
       href="https://rentacar-nu.vercel.app/"
     />
   </div>

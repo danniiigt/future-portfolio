@@ -1,18 +1,24 @@
 ---
+import { useTranslations } from "../../i18n/utils";
 import TechItem from "./TechItem.astro";
+const t = useTranslations(Astro)
 ---
 
 <section id="stack" class="md:scroll-mt-16 flex flex-col gap-9">
   <div>
     <h1 class="text-text-light text-3xl font-bold underline decoration-primary">
-      Stack tecnológico
+      {t("Stack")}
     </h1>
-    <p class="text-lg">Las tecnologías que uso en mi día a día 🧩</p>
+    <p class="text-lg">
+      {t("StackSubtitle")}
+    </p>
   </div>
 
   <div class="flex flex-col gap-16">
     <div>
-      <h1 class="text-text-light text-xl mb-4">Lenguajes de programación</h1>
+      <h1 class="text-text-light text-xl mb-4">
+        {t("Languages")}
+      </h1>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
         <TechItem href="https://www.javascript.com/">JavaScript</TechItem>
@@ -29,7 +35,7 @@ import TechItem from "./TechItem.astro";
     </div>
 
     <div>
-      <h1 class="text-text-light text-xl mb-4">Frameworks y Librerías</h1>
+      <h1 class="text-text-light text-xl mb-4">{t("Frameworks")}</h1>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
         <TechItem href="https://reactjs.org/">React.js</TechItem>
@@ -50,7 +56,7 @@ import TechItem from "./TechItem.astro";
     </div>
 
     <div>
-      <h1 class="text-text-light text-xl mb-4">Software y Aplicaciones</h1>
+      <h1 class="text-text-light text-xl mb-4">{t("Software")}</h1>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
         <TechItem href="https://git-scm.com/">Git</TechItem>
@@ -68,7 +74,7 @@ import TechItem from "./TechItem.astro";
     </div>
 
     <div>
-      <h1 class="text-text-light text-xl mb-4">Servicios en la nube</h1>
+      <h1 class="text-text-light text-xl mb-4">{t("Cloud")}</h1>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
         <TechItem href="https://github.com/">Github</TechItem>

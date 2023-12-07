@@ -1,3 +1,8 @@
+---
+import { useTranslations } from "../i18n/utils";
+const t = useTranslations(Astro);
+---
+
 <aside
   class="relative z-40 border border-border bg-background-light/40 lg:sticky lg:top-0 lg:w-[320px] lg:h-[100dvh] lg:flex-shrink-0 border-x-0 border-b-0 lg:border-t-0 lg:border-r flex flex-col items-center gap-9 px-5 py-9 text-center"
 >
@@ -9,7 +14,7 @@
 
   <div>
     <h1 class="font-bold text-text-light">Daniel González Tormo</h1>
-    <p>Desarrollador Fullstack</p>
+    <p>{t("Role")}</p>
   </div>
 
   <div class="flex items-center gap-6">
@@ -60,8 +65,7 @@
   </div>
 
   <p class="typography-2 text-dimmed mt-4">
-    Apasionado de la teconología y el mundo del desarrollo. Me encanta aprender
-    y transformar ideas en realidades.
+   {t("MeDescription")}
   </p>
 
   <div class="flex-auto"></div>
@@ -88,7 +92,7 @@
         <polyline points="7 10 12 15 17 10"></polyline>
         <line x1="12" x2="12" y1="15" y2="3"></line>
       </svg>
-       Descargar CV
+       {t("DownloadCV")}
     </a>
     <a
       class="w-full border border-border-light hover:border-border-extra-light bg-background-opposite text-text-opposite hover:bg-background-opposite/75 rounded py-2 cursor-pointer transition-all duration-150 flex items-center justify-center"
@@ -112,7 +116,7 @@
         <path d="M19 16v6"></path>
         <path d="M16 19h6"></path>
       </svg>
-       Contactar
+       {t("Contact")}
     </a>
   </div>
 </aside>

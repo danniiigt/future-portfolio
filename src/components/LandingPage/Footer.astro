@@ -1,5 +1,7 @@
 ---
+import { useTranslations } from "../../i18n/utils";
 import LinkItem from "./LinkItem.astro";
+const t = useTranslations(Astro);
 ---
 
 <footer class="-mt-14">
@@ -7,11 +9,11 @@ import LinkItem from "./LinkItem.astro";
 
   <div class="mt-8">
     <p class="flex flex-wrap gap-x-1.5">
-      Web construida con <LinkItem href="https://astro.build/" text="Astro" /> y
+      {t("WebBuild")} <LinkItem href="https://astro.build/" text="Astro" /> {t("And")}
 
 
       <LinkItem href="https://tailwindcss.com/" text="TailwindCSS." />
-       Desplegada en <LinkItem text="Vercel" href="https://vercel.com" />
+       {t("Deployed")} <LinkItem text="Vercel" href="https://vercel.com" />
     </p>
   </div>
 </footer>
