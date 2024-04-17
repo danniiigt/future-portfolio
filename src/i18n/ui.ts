@@ -8,7 +8,7 @@ export const ui = {
     Intro: "Hola, soy",
     Role: "Desarrollador Fullstack",
     Location: "Murcia, España.",
-    WorkStatus: "Abierto a Ofertas",
+    WorkStatus: "Abierto a trabajos",
     About: "Un poco acerca de mi",
     AboutSubtitle:
       "Como me adentré al mundo del desarrollo y mis planes de futuro. 👇",
@@ -23,16 +23,16 @@ export const ui = {
     Experience: "Mi experienca en el mundo tech",
     ExperienceSubtitle:
       "El paso por los diferentes proyectos y mi papel en cada uno 💻",
-    ExperienceDate1: "JUN 2023 - ACTUALIDAD",
+    ExperienceDate1: "JUNIO 2023 - ACTUALIDAD",
     ExperienceTitle1:
       "Desarrollador Fullstack (React.js & Node.js) @ Papel A Web",
     ExperienceBody1:
       "En este puesto, nuevamente desarrollo aplicaciones web de manera autónoma. Mi día a día consiste en analizar las necesidades del cliente/empresa y desarrollar una solución técnica adaptada, abarcando todo el proceso: diseño de la base de datos, desarrollo del backend y desarrollo del frontend. Esta experiencia me ha brindado la oportunidad de enfrentar desafíos constantes y aprender de manera continua.",
-    ExperienceDate2: "MAR 2023 - JUN 2023",
+    ExperienceDate2: "MARZO 2023 - JUNIO 2023",
     ExperienceTitle2: "Desarrollador Fullstack (VUE & .NET) @ Comanet",
     ExperienceBody2:
       "En Comanet, desempeñé el rol de desarrollador fullstack. Fue un nuevo desafío, ya que me enfrenté a un stack tecnológico que desconocía, con tecnologías como Vue y .NET. Después de apenas unas semanas, logré dominar ambas tecnologías y comencé a trabajar de manera autónoma en el desarrollo de una webapp destinada a eventos de carreras. Esta aplicación abarcaba diversas funcionalidades, como la gestión de inscripciones, pagos y participantes, entre otras. Mi experiencia en Comanet no solo me permitió adquirir nuevas habilidades, sino también desarrollar la capacidad de adaptarme rápidamente a entornos tecnológicos cambiantes.",
-    ExperienceDate3: "DIC 2022 - MAR 2023",
+    ExperienceDate3: "ABRIL 2022 - MARZO 2023",
     ExperienceTitle3: "Desarrollador Fullstack Freelance",
     ExperienceBody3:
       "Mi primera experiencia tanto laboral como freelance. Estuve desarrollando soluciónes tecnicas para distintos clientes, desde una web para el seguimiento de pedidos, hasta una REST API para una aplicación de inversiónes con integración de distintos métodos de pago. Durante esta etapa pude poner en práctica mis conocimientos de desarrollo web, y aprender a trabajar con clientes, analizando sus necesidades y ofreciendo soluciones adaptadas.",
@@ -106,7 +106,7 @@ export const ui = {
     ExperienceTitle2: "Fullstack Developer (VUE & .NET) @ Comanet",
     ExperienceBody2:
       "At Comanet, I performed the role of fullstack developer. It was a new challenge, as I faced a technological stack that I was unfamiliar with, with technologies such as Vue and .NET. After just a few weeks, I was able to master both technologies and began working autonomously on the development of a webapp for racing events. This application encompassed various functionalities, such as registration management, payments, and participants, among others. My experience at Comanet not only allowed me to acquire new skills, but also to develop the ability to quickly adapt to changing technological environments.",
-    ExperienceDate3: "DEC 2022 - MAR 2023",
+    ExperienceDate3: "DEC 2022 - MARZO 2023",
     ExperienceTitle3: "Freelance Fullstack Developer",
     ExperienceBody3:
       "My first experience both as an employee and as a freelancer. I was developing technical solutions for different clients, from a web for order tracking, to a REST API for an investment application with integration of different payment methods. During this stage I was able to put my web development knowledge into practice, and learn to work with clients, analyzing their needs and offering tailored solutions.",
