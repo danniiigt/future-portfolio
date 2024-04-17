@@ -7,6 +7,8 @@ import TechStack from "../../components/LandingPage/TechStack.astro";
 import Projects from "../../components/LandingPage/Projects.astro";
 import Footer from "../../components/LandingPage/Footer.astro";
 
+export const prerender = true
+
 export function getStaticPaths() {
   return [
     {params: {language: 'es'}},
